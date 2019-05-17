@@ -121,14 +121,14 @@ public class MainActivity extends AppCompatActivity implements UniversityInfoReq
 
             }
             ArrayList<University_bp> bp_unis = new ArrayList<>();
-            bp_unis.add(new University_bp(university_efpc, "<b>EF per capita:</b> "+min_efpc));
-            bp_unis.add(new University_bp(university_energy, "<b>Energy EF per capita:</b> "+min_energy));
-            bp_unis.add(new University_bp(university_paper, "<b>Paper EF per capita:</b> "+min_paper));
-            bp_unis.add(new University_bp(university_food, "<b>Food EF per capita:</b> "+min_food));
-            bp_unis.add(new University_bp(university_built_land,"<b>Built land EF per capita:</b> "+min_built_land));
-            bp_unis.add(new University_bp(university_water, "<b>Water EF per capita:</b> "+min_water));
-            bp_unis.add(new University_bp(university_mobility, "<b>Mobility EF per capita:</b> "+min_mobility));
-            bp_unis.add(new University_bp(university_waste, "<b>Waste EF per capita:</b> "+min_waste));
+            bp_unis.add(new University_bp(university_efpc, "<b>EF:</b> "+min_efpc));
+            bp_unis.add(new University_bp(university_energy, "<b>Energy EF:</b> "+min_energy));
+            bp_unis.add(new University_bp(university_paper, "<b>Paper EF:</b> "+min_paper));
+            bp_unis.add(new University_bp(university_food, "<b>Food EF:</b> "+min_food));
+            bp_unis.add(new University_bp(university_built_land,"<b>Built land EF:</b> "+min_built_land));
+            bp_unis.add(new University_bp(university_water, "<b>Water EF:</b> "+min_water));
+            bp_unis.add(new University_bp(university_mobility, "<b>Mobility EF:</b> "+min_mobility));
+            bp_unis.add(new University_bp(university_waste, "<b>Waste EF:</b> "+min_waste));
 
             // Sort the spots in alphabetic order based on the spot name.
             Collections.sort(bp_unis);
@@ -151,6 +151,12 @@ public class MainActivity extends AppCompatActivity implements UniversityInfoReq
         Intent intent = new Intent(this, CalculateEfActivity.class);
         intent.putExtra("efpc",min_efpc);
         intent.putExtra("energy",min_energy);
+        intent.putExtra("mobility",min_mobility);
+        intent.putExtra("food",min_food);
+        intent.putExtra("waste",min_waste);
+        intent.putExtra("water",min_water);
+        intent.putExtra("built_land",min_built_land);
+        intent.putExtra("paper",min_paper);
         startActivity(intent);
     }
 
