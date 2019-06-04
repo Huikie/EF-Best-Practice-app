@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Best practice ecological footprint for universities</string>
     <string name="title_activity_test">TestActivity</string>
-</resources>
+
+    <string-array name="BL_info">
+        <item>Calculation</item>
+        <item>Built land m2 * 0,000283</item>
+    </string-array>
+    </resources>
