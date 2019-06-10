@@ -127,7 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00adb5"
-            android:onClick="energyCalc"
+            android:onClick="paperCalc"
             android:padding="6dp"
             android:text="Calculation"
             android:textColor="#eeeeee" />
@@ -186,6 +186,7 @@
         android:layout_marginRight="6dp"
         android:layout_marginBottom="12dp"
         android:background="#00adb5"
+        android:onClick="compareEF"
         android:text="Compare with best practice!"
         android:textColor="#eeeeee"
         android:textColorHint="#7feeeeee"

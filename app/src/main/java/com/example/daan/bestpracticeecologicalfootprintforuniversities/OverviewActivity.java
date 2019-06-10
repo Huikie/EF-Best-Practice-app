@@ -34,7 +34,6 @@ public class OverviewActivity extends AppCompatActivity implements UniversityInf
 
     @Override
     public void gotUniInfo(ArrayList<University> universities) {
-        Toast.makeText(this, "succes", Toast.LENGTH_LONG).show();
         try{
             for(int i=0; i<universities.size();i++) {
 
@@ -139,7 +138,7 @@ public class OverviewActivity extends AppCompatActivity implements UniversityInf
     }
 
     public void CalculateEf(View v){
-        Intent intent = new Intent(this, CompareEfActivity.class);
+        Intent intent = new Intent(this, CalculateEfActivity.class);
         intent.putExtra("efpc",min_efpc);
         intent.putExtra("energy",min_energy);
         intent.putExtra("mobility",min_mobility);
