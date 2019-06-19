@@ -20,19 +20,39 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
+    <EditText
+        android:id="@+id/input_uni"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="8"
+        android:hint="University's name"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#eeeeee"
+        android:textColorHint="#7feeeeee" />
+
     <android.support.v7.widget.GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="12dp"
-        app:columnCount="2">
+        app:columnCount="3">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/built_land" />
 
         <EditText
             android:id="@+id/input_bl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
             android:ems="8"
-            android:hint="Built land m2"
+            android:hint="Built land EF"
             android:inputType="textPersonName"
             android:padding="16dp"
             android:textColor="#eeeeee"
@@ -42,16 +62,26 @@
             android:id="@+id/bl_calc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="6dp"
             android:background="#00adb5"
             android:onClick="blCalc"
             android:padding="6dp"
             android:text="Calculation"
             android:textColor="#eeeeee" />
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/energie" />
+
         <EditText
             android:id="@+id/input_energy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
             android:ems="8"
             android:hint="Energy EF"
             android:inputType="textPersonName"
@@ -63,16 +93,26 @@
             android:id="@+id/energy_calc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="6dp"
             android:background="#00adb5"
             android:onClick="energyCalc"
             android:padding="6dp"
             android:text="Calculation"
             android:textColor="#eeeeee" />
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/food" />
+
         <EditText
             android:id="@+id/input_food"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
             android:ems="8"
             android:hint="Food EF"
             android:inputType="textPersonName"
@@ -84,16 +124,26 @@
             android:id="@+id/food_calc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="6dp"
             android:background="#00adb5"
             android:onClick="foodCalc"
             android:padding="6dp"
             android:text="Calculation"
             android:textColor="#eeeeee" />
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/mobility" />
+
         <EditText
             android:id="@+id/input_mobility"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
             android:ems="8"
             android:hint="Mobility EF"
             android:inputType="textPersonName"
@@ -105,16 +155,26 @@
             android:id="@+id/mobility_calc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="6dp"
             android:background="#00adb5"
             android:onClick="mobilityCalc"
             android:padding="6dp"
             android:text="Calculation"
             android:textColor="#eeeeee" />
 
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/paper" />
+
         <EditText
             android:id="@+id/input_paper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
             android:ems="8"
             android:hint="Paper EF"
             android:inputType="textPersonName"
@@ -126,16 +186,26 @@
             android:id="@+id/paper_calc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="6dp"
             android:background="#00adb5"
             android:onClick="paperCalc"
             android:padding="6dp"
             android:text="Calculation"
             android:textColor="#eeeeee" />
 
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/waste" />
+
         <EditText
             android:id="@+id/input_waste"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
             android:ems="8"
             android:hint="Waste EF"
             android:inputType="textPersonName"
@@ -147,16 +217,26 @@
             android:id="@+id/waste_calc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="6dp"
             android:background="#00adb5"
             android:onClick="wasteCalc"
             android:padding="6dp"
             android:text="Calculation"
             android:textColor="#eeeeee" />
 
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/water" />
+
         <EditText
             android:id="@+id/input_water"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
             android:ems="8"
             android:hint="Water EF"
             android:inputType="textPersonName"
@@ -168,6 +248,8 @@
             android:id="@+id/water_calc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="6dp"
             android:background="#00adb5"
             android:onClick="waterCalc"
             android:padding="6dp"
@@ -187,87 +269,8 @@
         android:layout_marginBottom="12dp"
         android:background="#00adb5"
         android:onClick="compareEF"
+        android:padding="6dp"
         android:text="Compare with best practice!"
-        android:textColor="#eeeeee"
-        android:textColorHint="#7feeeeee"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/built_land"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:padding="6dp"
-        android:textColor="#eeeeee"
-        android:textColorHint="#7feeeeee"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/efpc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:padding="6dp"
-        android:textColor="#eeeeee"
-        android:textColorHint="#7feeeeee"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/energy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:padding="6dp"
-        android:textColor="#eeeeee"
-        android:textColorHint="#7feeeeee"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/food"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:padding="6dp"
-        android:textColor="#eeeeee"
-        android:textColorHint="#7feeeeee"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/mobility"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:padding="6dp"
-        android:textColor="#eeeeee"
-        android:textColorHint="#7feeeeee"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/paper"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:padding="6dp"
-        android:textColor="#eeeeee"
-        android:textColorHint="#7feeeeee"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/waste"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:padding="6dp"
-        android:textColor="#eeeeee"
-        android:textColorHint="#7feeeeee"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/water"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:padding="6dp"
         android:textColor="#eeeeee"
         android:textColorHint="#7feeeeee"
         android:textSize="18sp" />

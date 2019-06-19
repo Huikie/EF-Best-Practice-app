@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -265,6 +266,8 @@ public class CalculateEfActivity extends AppCompatActivity implements University
         EditText input_water = findViewById(R.id.input_water);
         EditText input_paper = findViewById(R.id.input_paper);
 
+        EditText input_uni = findViewById(R.id.input_uni);
+
         try{
             if (!input_energy.getText().toString().isEmpty()) {
                 Float energy_f = Float.parseFloat(input_energy.getText().toString());
@@ -350,8 +353,12 @@ public class CalculateEfActivity extends AppCompatActivity implements University
             check13 = 1;
         }
 
-        try{
-        if(check != 1 && check1 != 1 && check2 != 1 && check3 != 1 && check4 != 1 && check5 != 1 && check6 != 1 && check7 != 1 && check8 != 1 && check9 != 1 && check10 != 1 &&
+        if (TextUtils.isEmpty(input_uni.getText())){
+            input_uni.setError("Voer een naam in!");
+        }
+
+
+        else if(check != 1 && check1 != 1 && check2 != 1 && check3 != 1 && check4 != 1 && check5 != 1 && check6 != 1 && check7 != 1 && check8 != 1 && check9 != 1 && check10 != 1 &&
             check11 != 1 && check12 != 1 && check13 != 1) {
             Intent intent = new Intent(this, CompareEfActivity.class);
             intent.putExtra("energy", energy);
@@ -371,9 +378,9 @@ public class CalculateEfActivity extends AppCompatActivity implements University
             intent.putExtra("min_mobility", min_mobility);
             intent.putExtra("min_efpc", min_efpc);
 
+            String uni_name = input_uni.getText().toString();
+            intent.putExtra("uni_name", uni_name);
+
             startActivity(intent);}
-        }catch(Exception e){
-            Toast.makeText(this, "Something went wrong, please contact the app builder!", Toast.LENGTH_LONG).show();
-        }
     }
 }
