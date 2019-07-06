@@ -354,7 +354,7 @@ public class CalculateEfActivity extends AppCompatActivity implements University
         }
 
         if (TextUtils.isEmpty(input_uni.getText())){
-            input_uni.setError("Voer een naam in!");
+            input_uni.setError("Fill in your university's name!");
         }
 
 

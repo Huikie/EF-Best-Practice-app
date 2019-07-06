@@ -58,6 +58,8 @@ public class CompareEfActivity extends AppCompatActivity {
         Float min_efpc = intent2.getFloatExtra("min_efpc", 0);
 
         String uni_name = intent2.getStringExtra("uni_name");
+        TextView title = findViewById(R.id.title_2);
+        title.setText(uni_name+"'s EF compared to BP");
 
         energy_comp = min_energy;
         mobility_comp = min_mobility;
